@@ -1,0 +1,26 @@
+nav {
+    position: sticky !important;
+}
+
+h1 {
+    text-align: center;
+}
+
+#employees {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#employees img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#employees2 h3 {
+    text-align: center;
+}
+
+#employees3 h3 {
+    text-align: right;
+}

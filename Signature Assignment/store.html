@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manchester United Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="roster.html">ROSTER</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="store.html">STORE</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Manchester United Official Store</h1>
+
+<p class="intro">
+    Welcome to the Manchester United merchandise store. Browse official items and use the calculator
+    to estimate your total order cost before submitting your purchase.
+</p>
+
+<!-- CALCULATOR -->
+<section class="store-section">
+    <h2>Order Calculator</h2>
+
+    <p>Select item prices below to calculate your total.</p>
+
+    <input type="checkbox" id="jersey" value="90"> Jersey ($90)<br>
+    <input type="checkbox" id="training" value="75"> Training Kit ($75)<br>
+    <input type="checkbox" id="scarf" value="25"> Scarf ($25)<br>
+    <input type="checkbox" id="hat" value="30"> Match Day Hat ($30)<br>
+
+    <br>
+
+    <button onclick="calculateTotal()">Calculate Total</button>
+
+    <p id="calcResult"></p>
+</section>
+
+<!-- ORDER FORM -->
+<section class="store-section">
+    <h2>Place Your Order</h2>
+
+    <form action="thankyou.html" onsubmit="return validateForm()">
+
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+        <label>Choose Items</label><br>
+        <input type="checkbox" name="item"> Jersey<br>
+        <input type="checkbox" name="item"> Kit<br>
+        <input type="checkbox" name="item"> Scarf<br>
+        <input type="checkbox" name="item"> Hat<br>
+
+        <label>Delivery Method</label><br>
+        <input type="radio" name="delivery"> Delivery<br>
+        <input type="radio" name="delivery"> Pickup<br><br>
+
+        <button type="submit">Submit Order</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Manchester United Fan Store</p>
+</footer>
+
+</body>
+</html>
